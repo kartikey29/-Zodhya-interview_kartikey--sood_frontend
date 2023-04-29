@@ -1,0 +1,11 @@
+table {
+  width: 100%;
+}
+
+table tr td:first-child {
+  width: 20%;
+}
+
+table tr td:last-child {
+  width: calc(100% - 20%);
+}
