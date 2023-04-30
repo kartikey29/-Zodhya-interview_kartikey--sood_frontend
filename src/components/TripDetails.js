@@ -36,7 +36,9 @@ const TripDetails = (props) => {
             <td>
               <h4>future weather</h4>
               {props.tripData.weatherData.futureWeather.map((weather) => {
-                return <Card now={false} weather={weather}></Card>;
+                return (
+                  <Card key={weather.dt} now={false} weather={weather}></Card>
+                );
               })}
             </td>
           </tr>

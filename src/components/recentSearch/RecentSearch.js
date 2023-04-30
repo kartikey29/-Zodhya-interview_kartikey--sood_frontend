@@ -14,7 +14,7 @@ const RecentSearch = (props) => {
   const mapData = (data) => {
     return data.map((d) => {
       return (
-        <div>
+        <div key={d._id}>
           <div
             style={{
               border: "solid 1px black",

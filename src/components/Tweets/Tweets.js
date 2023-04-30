@@ -22,7 +22,7 @@ const Tweets = (props) => {
     return data.map((d) => {
       return (
         <>
-          <p>{d.text}</p>
+          <p key={d.id}>{d.text}</p>
         </>
       );
     });
