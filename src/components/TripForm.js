@@ -31,6 +31,13 @@ const TripForm = (props) => {
         console.log(res.data);
         props.setTripData({ ...body, weatherData: res.data });
         props.setShow(true);
+
+        const added = await api.post("/search", {
+          from: starting,
+          to: ending,
+          weather: res.data.currentWeather,
+        });
+
         setStarting("");
         setEnding("");
       }

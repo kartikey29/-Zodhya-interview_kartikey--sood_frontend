@@ -27,6 +27,7 @@ const AddressSearch = (props) => {
     <>
       <label>{props.label}</label>
       <input
+        style={{ width: "400px", margin: "5px" }}
         value={props.value}
         name={props.name}
         ref={inputRef}
